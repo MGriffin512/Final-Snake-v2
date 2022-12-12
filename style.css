@@ -1,0 +1,153 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-green: #66ff00;
+  --clr-red: #ff0800;
+  --clr-black: #0c0c0c;
+  --clr-white: #fff;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--clr-black);
+  color: var(--clr-black);
+  font-family: 'Helvetica Neue', 'Segoe UI', Roboto, 'Open Sans', sans-serif;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+header {
+  position: relative;
+  max-height: max-content;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+aside {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 18rem;
+  background: black;
+  color: white;
+}
+
+#name {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  flex-grow: 1;
+  font-size: 1.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 1rem;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+#name span {
+  font-weight: 600;
+}
+#name p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#help {
+  padding: 1rem;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  color: var(--clr-green);
+}
+
+h1,
+h2,
+#score,
+#last-score {
+  font-family: 'Press Start 2P', sans-serif;
+  font-stretch: condensed;
+}
+
+#help p:first-of-type {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 700;
+}
+
+#curr,
+#prev {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  font-size: 1.25rem;
+  line-height: 1;
+  width: 100%;
+  height: max-content;
+  padding: 1rem 1rem;
+  gap: 1rem;
+}
+
+#curr {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#prev {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+#prev p:first-of-type,
+#curr p:first-of-type {
+  text-align: left;
+}
+
+#curr p:first-of-type {
+  font-weight: 700;
+}
+
+#last-score,
+#score {
+  display: flex;
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: right;
+  line-height: 1;
+  color: var(--clr-green);
+  align-items: center;
+}
+
+.red {
+  border-bottom: 2px solid var(--clr-red);
+}
+.green {
+  border-bottom: 2px solid var(--clr-green);
+}
